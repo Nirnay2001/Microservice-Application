@@ -7,7 +7,7 @@ resource "aws_iam_role" "nodes" {
         "Effect": "Allow",
         "Action": "sts:AssumeRole",
         "Principal":{
-            "Service": "eks.amazonaws.com"
+            "Service": "ec2.amazonaws.com"
         }
     }]
   }
