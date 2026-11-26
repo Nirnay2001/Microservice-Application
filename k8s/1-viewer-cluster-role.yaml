@@ -6,7 +6,7 @@ roleRef:
   kind: ClusterRole
   name: viewer
   apiGroup: rbac.authorization.k8s.io
-subject:
+subjects:
   - kind: Group 
     name: my-viewer
     apiGroup: rbac.authorization.k8s.io
