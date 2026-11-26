@@ -2,7 +2,7 @@ resource "aws_iam_user" "developer" {
   name = "developer"
 }
 resource "aws_iam_policy" "developer_eks" {
-  name = AmazonEKSDeveloperPolicy
+  name = "AmazonEKSDeveloperPolicy"
   policy = <<POLICY
   {
         "Version": "2012-10-17",
