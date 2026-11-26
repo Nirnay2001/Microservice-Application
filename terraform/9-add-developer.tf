@@ -16,7 +16,6 @@ resource "aws_iam_policy" "developer_eks" {
                 "Resource": "*"
             }
         ]
-        }
     }
     POLICY
 }
