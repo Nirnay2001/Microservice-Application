@@ -1,3 +1,6 @@
+resource "aws_iam_user" "developer" {
+  name = "developer"
+}
 resource "aws_iam_policy" "developer_eks" {
   name = AmazonEKSDeveloperPolicy
   policy = <<POLICY
