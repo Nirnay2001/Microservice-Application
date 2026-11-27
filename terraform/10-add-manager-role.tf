@@ -4,7 +4,7 @@ resource "aws_iam_role" "eks_admin" {
   name = "${local.env}-${local.eks_name}-eks-admin"
   assume_role_policy = <<POLICY
   {
-    "version": "2012-10-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",
@@ -59,14 +59,14 @@ resource "aws_iam_policy" "eks_assume_admin" {
   name = "AmazonEKSAssumeAdminPolicy"
   policy = <<POLICY
   {
-    "version": "2012-11-17",
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Effect": "Allow",
             "Action": [
                 "sts:AssumeRole"
             ],
-            "Resource": "${aws_iam_role.eks_admin.arn}
+            "Resource": "${aws_iam_role.eks_admin.arn}"
         }
     ]
   }
