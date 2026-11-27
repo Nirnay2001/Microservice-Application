@@ -22,7 +22,7 @@ resource "aws_iam_policy" "eks_admin" {
   name = "AmazonEKSAdminRole"
   policy = <<POLICY
   {
-    "Version": "2012-10-17"
+    "Version": "2012-10-17",
     "Statement: [
         {
             "Effect": "Allow",
