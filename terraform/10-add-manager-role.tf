@@ -1,4 +1,4 @@
-data "aws_caller_indetity" "current" {}
+data "aws_caller_identity" "current" {}
 
 resource "aws_iam_role" "eks_admin" {
   name = "${local.env}-${local.eks_name}-eks-admin"
