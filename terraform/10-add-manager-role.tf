@@ -23,7 +23,7 @@ resource "aws_iam_policy" "eks_admin" {
   policy = <<POLICY
   {
     "Version": "2012-10-17",
-    "Statement: [
+    "Statement": [
         {
             "Effect": "Allow",
             "Action": [
